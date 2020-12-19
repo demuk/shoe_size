@@ -9,3 +9,8 @@ h1 {
 p, #form_data {
     text-align: center;
 }
+
+#logo-img{
+    height: 100px;
+    width: auto;
+}
