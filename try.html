@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form id="frm1" action="Calculate.html">
+    <table width="350px" border="1px">
+        <tr>
+            <th colspan="2">Availability</th>
+        </tr>
+        <tr>
+            <td>Total Production Time</td>
+            <td>
+                <input type="number" id="TotalProductionTime" placeholder="">hours</td>
+        </tr>
+        <tr>
+            <td>Breaks</td>
+            <td>
+                <input type="number" id="Breaks" placeholder="">minutes</td>
+        </tr>
+        <tr>
+            <td>Malfunctions</td>
+            <td>
+                <input type="number" id="Malfunctions" placeholder="">minutes</td>
+        </tr>
+        <tr>
+            <td>Theoretical production time:</td>
+            <td>
+                <p id="test"></p>
+            </td>
+        </tr>
+    </table>
+    <input type="button" onclick="Calculate()" value="calculate">
+</form>
+
+
+    
+
+    <script>
+    function Calculate() {
+        var TotalProductionTime = document.getElementById("TotalProductionTime").value;
+        var TotalProductionTimeInMinutes = TotalProductionTime * 60;
+        var Breaks = document.getElementById("Breaks").value;
+        var Malfunctions = document.getElementById("Malfunctions").value;
+        var TheoreticalProductionTime = TotalProductionTimeInMinutes - Breaks - Malfunctions;
+        
+        document.getElementById("test").innerHTML = TheoreticalProductionTime;
+    }
+    </script>
+</body>
+</html>
