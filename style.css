@@ -8,9 +8,11 @@ h1 {
 
 p, #form_data {
     text-align: center;
+    color: #333300;
 }
 
 #logo-img{
     height: 100px;
     width: auto;
 }
+
