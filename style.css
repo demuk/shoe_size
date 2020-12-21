@@ -2,8 +2,14 @@ body {
     background-color: aliceblue;
 }
 
-h1 {
+h1, h3{
     text-align: center;
+}
+
+ol {
+    padding-left: 250px;
+    color: #333300;
+
 }
 
 p, #form_data {
