@@ -7,7 +7,7 @@ h1, h3{
 }
 
 ol {
-    padding-left: 250px;
+    text-align: center;
     color: #333300;
 
 }
@@ -21,4 +21,3 @@ p, #form_data {
     height: 100px;
     width: auto;
 }
-
